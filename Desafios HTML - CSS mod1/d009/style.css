@@ -1,0 +1,20 @@
+body {
+
+    background-color: rgb(34, 32, 32);
+
+}
+
+h1 {
+    
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+a {
+    color: white;
+}
+
+div {
+    display: flex; justify-content: center;
+}

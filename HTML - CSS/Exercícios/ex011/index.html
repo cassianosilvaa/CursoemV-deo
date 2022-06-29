@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex004/dev.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+        <!--Isso serve para que as imagens carreguem em diferentes tamanhos de telas, sendo assim, usuários de mobile, tablets, e pcs, podem abrir o seu site tranquilamente.-->
+
+        <!--A ordem das imagens tem que estar certas, da maior para a menor ou menor para a maior-->
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem fexível">
+    </picture>
+
+    <h1>Reproduzidno Áudio</h1>
+
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    
+
+    <h2>Moonlight Sonata - Beethoven</h2>
+
+    <p>Clique no play para reproduzir!</p>
+    
+    <!-- <audio controls src="midia/moonlight-sonata-beethoven.mp3"></audio> -->
+    <!-- MP3 WAV OGG --> 
+
+    <audio preload="metadata" controls loop>
+       
+       
+        <source src="midia/moonlight-sonata-beethoven.mp3" type="audio/mpeg">
+       <!--Está comentado, está faltando a converssão
+        <source src="midia/moonlight-sonata-beethoven.ogg" type="audio/ogg">
+        <source src="midia/moonlight-sonata-beethoven.wav" type="audio/WAV"> 
+       -->
+        <!--Evite usar WAV, pois pesa muito-->
+        <p>Infelizmente o seu navegador nao consegue reproduzir áudio. <a href="midia/moonlight-sonata-beethoven.mp3" download="moonlight-sonata-beethoven.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo MP3</a></p>
+
+        
+    </audio>
+
+   
+
+</body>
+</html>
